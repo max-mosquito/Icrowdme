@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+	text-align: right;
+}
+.see {
+	width: 500px;
+	position: relative;
+	padding-right: 50px;
+	border: 1px solid black;
+}.see a {
+	
+}
+.see a:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #add136;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -50px;
+	transform: rotate(45deg);
+}
