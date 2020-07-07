@@ -1,0 +1,44 @@
+@media (max-width:991px) {
+	.wrap_top{
+	flex-wrap: wrap;
+	}
+	.logo {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 1;
+	}
+	.login {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 2;
+	}
+	.nav {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 3;
+		padding-top: 20px;
+	}
+	.tab {
+	flex: 0 1 50%;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	}
+	.tab_text {
+		padding: 0 15px;
+	}
+	.tab_item-pic {
+    padding: 90px 90px 90px 40px;
+	}
+	.two_half {
+		flex-wrap: wrap;
+	}
+	.half {
+		width: 100%;
+	}
+}

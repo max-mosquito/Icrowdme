@@ -39,6 +39,9 @@ text-transform: uppercase;
 .burger {
 	display: none;
 }
+.nav {
+	padding: 0 10px;
+}
 nav ul {
 	display: flex;
 }
@@ -56,6 +59,9 @@ nav li a {
 	font-size: 13px;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+nav li a:hover {
+	text-decoration: underline;
 }
 .login a {
 	color: #fff;
@@ -100,31 +106,38 @@ nav li a {
 	left: 0;
 	right: 0;
 	margin: auto;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-around;
 }
 .slider h2 {
-color: #fff;
-font-family: "Open Sans";
-font-size: 49px;
-font-weight: 600;
-line-height: 77px;
-padding-top: 10rem;
-padding-bottom: 5rem;
+	color: #fff;
+	font-family: "Open Sans";
+	/*font-size: 49px;*/
+	font-weight: 600;
+	line-height: 77px;
+/*	padding-top: 10rem;
+	padding-bottom: 5rem;*/
+	font-size: calc(14px + 35 * (100vw / 1055));
 }
  .slider h2 span {
-color: #fff;
-font-family: "Open Sans";
-font-weight: 400;
-font-size: 35px;
+	color: #fff;
+	font-family: "Open Sans";
+	font-weight: 400;
+	/*font-size: 35px;*/
+	font-size: calc(12px + 23 * (100vw / 1055));
 }
 .slider a {
-color: #fff;
-font-family: "Open Sans";
-font-size: 19px;
-font-weight: 600;
-padding: 25px 35px;
-background-color: #99c50a;
-border-radius: 10px;
-}
+	color: #fff;
+	font-family: "Open Sans";
+	/*font-size: 19px;*/
+	font-weight: 600;
+	padding: 25px 35px;
+	background-color: #99c50a;
+	border-radius: 10px;
+	font-size: calc(12px + 7 * (100vw / 1055));
+	}
 /*---------------*/
 .slick-track {
 	display: flex;
@@ -140,7 +153,6 @@ border-radius: 10px;
 }
 .slick-prev {
 	background-color: transparent;
-	/*bottom: 0;*/
 	right:10rem;
 	z-index: 2
 }
@@ -155,6 +167,7 @@ border-radius: 10px;
 .slick-next {
 	background-color: transparent;
 	right: 5rem;
+	/*right: 100px;*/
 }
 .slick-next:before {
 	/*right: 0.5rem;*/
@@ -206,9 +219,11 @@ line-height: 2.5rem;
 }
 .tabs {
 	display: flex;
+	flex-wrap: wrap;
+	padding: 0 15px;
 }
 .tab {
-	flex:1 1 33.333%;
+	flex: 1 1 33.333%;
 	display: flex;
 	align-items: center;
 	padding-bottom: 30px;
@@ -446,8 +461,6 @@ font-family: "Open Sans";
 font-size: 13px;
 font-weight: 600;
 }
-.fund {}
-.days {}
 .see {
 	text-align: right;
 	padding-bottom: 15px;
@@ -481,7 +494,7 @@ font-weight: 600;
 	max-width: 955px;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 60px;
+	padding: 0 15px 60px;
 }
 .part h2 {
 color: #9ec02d;

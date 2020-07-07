@@ -1,0 +1,20 @@
+	@media (max-width: 767px) {
+	.slider h2 {
+		line-height: 40px;
+	}
+	.feature {
+		flex-wrap: wrap;
+		padding-top: 20px;
+	}
+	.feature_title {
+		padding-bottom: 20px;
+	}
+	.cards {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	.cart {
+		flex: 1 1 46%;
+		margin: 10px;
+	}
+}
